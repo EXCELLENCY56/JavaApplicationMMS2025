@@ -13,13 +13,21 @@ public class UserInput{
 	  
 	  System.out.print("Enter your age: ");
 	  int age = scan.nextInt();
-	  System.out.println("");
+	  System.out.printf("Enter your gender(Male/Female): ");
+	  String gender = scan.next();
 	  
+	  System.out.printf("Are you happy to learn Java?(True/Flase: ");
+	  boolean isHappy = scan.nextBoolean();
+	  
+	  
+	  System.out.println("");
+	  System.out.println("");
 	  
 	 
 	  System.out.printf("Hello %s ,How are you today?%n",fullName);
 	  System.out.printf("Nice meeting you,you are living in %s%n",address);
-	  System.out.printf("%S you are %d years old",fullName,age);
-	  
+	  System.out.printf("%S you are %d years old%n",fullName,age);
+	  System.out.printf("You are a %s%n ",gender);
+	  System.out.printf("Are you happy to learn Java? %s%n ",isHappy);
 	} 
 }
